@@ -5,6 +5,7 @@ COPY gosu /usr/local/bin/
 COPY docker-entrypoint.sh /
 
 RUN chmod +x /usr/local/bin/gosu
+RUN chmod +x /docker-entrypoint.sh
 
 ENV LANG en_US.utf8
 ENV PGDATA /var/lib/postgresql/data
